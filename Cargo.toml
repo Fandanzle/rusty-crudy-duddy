@@ -1,0 +1,27 @@
+[package]
+name = "rusty_cruddy_simple"
+version = "0.1.0"
+authors = ["alex"]
+
+[dependencies]
+rocket = { version = "0.4.1", default-features = false }
+rocket_cors = { version = "0.4.0", default-features = false }
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+rust-crypto = "0.2.36"
+frank_jwt = "3.1.1"
+chrono = {version = "0.4", features = ["serde"]}
+diesel = {version = "1.4.1", features = ["postgres", "chrono"]}
+validator = "0.8.0"
+validator_derive = "0.8.0"
+slug = "0.1.2"
+rand = "0.6.3"
+dotenv = "0.9.0"
+uuid = { version = "0.7", features = ["serde", "v4"] }
+serde_derive = "1.0.99"
+lazy_static = "1.4.0"
+
+[dependencies.rocket_contrib]
+version = "0.4.1"
+default-features = false
+features = ["json", "diesel_postgres_pool"]
